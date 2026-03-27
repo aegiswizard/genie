@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+.DS_Store
+.env
+genie_output/
+*.wav
+*.mp3
+*.m4a
+*.mp4
+*.mov

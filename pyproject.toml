@@ -1,0 +1,63 @@
+[build-system]
+requires      = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name        = "genie-sketch"
+version     = "1.0.0"
+description = "Agent-native state sketch engine for voice and video clips. Reads the room, not your soul."
+readme      = "README.md"
+license     = { text = "MIT" }
+authors     = [{ name = "Aegis Wizard" }]
+keywords    = ["emotion","state","voice","video","agent","sketch","nlp","multimodal","mcp","openclaw"]
+requires-python = ">=3.10"
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Sound/Audio :: Analysis",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+# Core: numpy only. Everything else is optional.
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+audio   = ["librosa>=0.10", "soundfile>=0.12"]
+face    = ["deepface>=0.0.79"]
+face_rich = ["feat>=0.5"]
+speech  = ["transformers>=4.35", "torch>=2.0"]
+meeting = ["pyannote.audio>=3.1"]
+visuals = ["matplotlib>=3.7"]
+serve   = ["fastapi>=0.100", "uvicorn>=0.20", "python-multipart>=0.0.6"]
+all     = [
+    "librosa>=0.10", "soundfile>=0.12",
+    "deepface>=0.0.79",
+    "transformers>=4.35", "torch>=2.0",
+    "matplotlib>=3.7",
+    "fastapi>=0.100", "uvicorn>=0.20", "python-multipart>=0.0.6",
+]
+dev     = ["pytest>=7.0", "black>=23.0", "ruff>=0.1"]
+
+[project.scripts]
+genie = "genie.cli:main"
+
+[project.urls]
+Homepage   = "https://github.com/aegiswizard/genie"
+Repository = "https://github.com/aegiswizard/genie"
+Issues     = "https://github.com/aegiswizard/genie/issues"
+
+[tool.setuptools.packages.find]
+where   = ["."]
+include = ["genie*"]
+
+[tool.black]
+line-length    = 100
+target-version = ["py310"]

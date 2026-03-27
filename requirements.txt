@@ -1,0 +1,35 @@
+# Genie 🧞‍♀️ — dependencies
+#
+# CORE (zero-install acoustic analysis — works immediately)
+numpy>=1.24
+
+# ── Better audio loading and features ─────────────────────────────────────
+# pip install librosa soundfile
+# librosa>=0.10
+# soundfile>=0.12
+
+# ── Face analysis for video mode ──────────────────────────────────────────
+# pip install deepface               (MIT — recommended default)
+# pip install feat                   (MIT — richer, heavier alternative)
+
+# ── Speech emotion model ──────────────────────────────────────────────────
+# pip install transformers torch     (MIT — HuggingFace wav2vec2 model)
+
+# ── Meeting diarization ───────────────────────────────────────────────────
+# pip install pyannote.audio         (MIT — requires free HuggingFace token)
+# export GENIE_HF_TOKEN=hf_...
+
+# ── PNG visual output ─────────────────────────────────────────────────────
+# pip install matplotlib
+
+# ── REST API server ───────────────────────────────────────────────────────
+# pip install fastapi uvicorn python-multipart
+
+# ── Install everything at once ────────────────────────────────────────────
+# pip install 'genie-sketch[all]'
+
+# ── RESEARCH add-ons (separate licenses — see docs/licensing.md) ──────────
+# TRIBE v2: CC BY-NC 4.0 — noncommercial only
+#   see: https://github.com/cfosco/TRIBE
+# brain_language_nlp: MIT
+#   see: https://github.com/brain-score/language
