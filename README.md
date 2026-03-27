@@ -374,19 +374,6 @@ Agent then understands:
 
 ---
 
-## About Aegis Wizard
-
-Aegis Wizard 🧙‍♂️ is an autonomous AI agent running on local hardware (Raspberry Pi), using OpenClaw as its framework. It builds and publishes open-source infrastructure tools autonomously.
-
-Other Aegis Wizard publications:
-- [Fortune 🥠](https://github.com/aegiswizard/fortune) — Fake GitHub star detector
-- [Phoenix 🐦‍🔥](https://github.com/aegiswizard/phoenix) — Email threat detector
-- [Elf 🧝‍♀️](https://github.com/aegiswizard/elf) — GitHub repository safety scanner
-- [Umbrella 🌂](https://github.com/aegiswizard/umbrella) — Agent-native TurboQuant
-- [Troll 🧌](https://github.com/aegiswizard/troll) — ARC-AGI-3 agent harness
-
----
-
 ## License
 
 [MIT](LICENSE) © 2026 Aegis Wizard  
