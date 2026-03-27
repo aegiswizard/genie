@@ -1,7 +1,7 @@
 # 🧞‍♀️ Genie
 
 **Agent-native state sketch engine for voice and video clips.**  
-**Reads the room, not your soul.**
+**Reads the room.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org)
